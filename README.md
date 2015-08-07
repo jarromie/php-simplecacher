@@ -1,4 +1,4 @@
-# php-simplecacher
+# simplecacher (PHP)
 Simple PHP text-to-file cacher class
 
 ## Features
