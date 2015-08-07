@@ -5,7 +5,7 @@
 	class simplecacher {
 		var $file;
 
-		private $Directory = __DIR__ . '/../json-cache';
+		private $Directory = '/../json-cache';
 		private $ExpireTime = 3600;
 
 		function __construct(){
@@ -15,7 +15,7 @@
 		}
 
 		private function add_dir_to_file($filename){
-			return $this->Directory . '/' . $filename;
+			return __DIR__ . $this->Directory . '/' . $filename;
 		}
 
 		private function urltofile($url){
@@ -91,7 +91,7 @@
 		}
 
 		public function get_cache_dir(){
-			return $this->Directory;
+			return __DIR__ . $this->Directory;
 		}
 	}
 
